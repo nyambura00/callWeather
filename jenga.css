@@ -1,11 +1,5 @@
-#weather-zone{
-    border: 3px solid white;
-    width: 40%;
-    height: 40%;
-    float: left;
-    display: flexbox;
-    margin-left: 20%;
-    margin-top: 5%;
-    padding-left: 15%;
-    padding-top: 5%;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
 }
