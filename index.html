@@ -1,15 +1,33 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="jenga.css"/>
-		<script type="text/javascript" src="call_weather.js">
-		</script>
-	</head>
-	<body style="background-color: grey;">
-		<div id="weather-zone">
-			<h3>Want to know your weather conditions? </h3>
-			<p>Input your city location: </p>
-			<input type="text" id="city" placeholder="Input your City Location" required/><br><br>
-			<button name="button" id="button" value="submit">Submit</button>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call weather</title>
+
+    <!-- bootstrap styles css: cdn -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="jenga.css" />
+  </head>
+  <body style="background-color: grey">
+    <div id="weather-zone">
+      <h3>Want to know your weather conditions?</h3>
+      <p>Input your city location:</p>
+      <input
+        type="text"
+        id="city"
+        placeholder="Input your City Location"
+        required
+      /><br /><br />
+      <button name="button" id="button" value="submit">Submit</button>
+    </div>
+
+    <script src="call_weather.js"></script>
+  </body>
 </html>
