@@ -20,5 +20,5 @@ submitButton.addEventListener("click", async function showWeatherFor(city) {
       console.log(data);
       CURRENT_WEATHER_DATA = data;
     });
-  return CURRENT_WEATHER_DATA;
+  document.getElementById("responseDisplay").innerHTML = CURRENT_WEATHER_DATA;
 });
