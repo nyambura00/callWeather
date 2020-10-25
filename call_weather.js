@@ -1,5 +1,5 @@
-const API_KEY = "0370bfb5ab6c164dfa9bfc236a549838";
-const CURRENT_WEATHER_DATA = {};
+aPI_KEY = "0370bfb5ab6c164dfa9bfc236a549838";
+cURRENT_WEATHER_DATA = {};
 
 const submitButton = document.getElementById("button");
 const city = document.getElementById("city");
@@ -9,7 +9,7 @@ submitButton.addEventListener("click", async function showWeatherFor(city) {
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&appid=" +
-    API_KEY;
+    aPI_KEY;
   const response = await fetch(url_to_call)
     .then((resp) => {
       console.log("In the fetch's response");
@@ -18,7 +18,7 @@ submitButton.addEventListener("click", async function showWeatherFor(city) {
     .then((data) => {
       console.log("In the second response");
       console.log(data);
-      CURRENT_WEATHER_DATA = data;
+      cURRENT_WEATHER_DATA = data;
     });
-  document.getElementById("responseDisplay").innerHTML = CURRENT_WEATHER_DATA;
+  document.getElementById("responseDisplay").innerHTML = cURRENT_WEATHER_DATA;
 });
